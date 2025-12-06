@@ -1,0 +1,9 @@
+{
+  "name": "focus-skills",
+  "version": "1.0.0",
+  "description": "Collection of Focus.AI development skills",
+  "author": {
+    "name": "The Focus AI"
+  },
+  "skills": "./skills"
+}
