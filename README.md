@@ -4,7 +4,21 @@ A collection of Claude Code skills for Focus.AI development workflows.
 
 ## Installation
 
-Install this plugin in Claude Code by adding it to your `.claude/plugins` directory or installing from the marketplace.
+### Via Focus Marketplace (Recommended)
+
+```bash
+# Add the Focus marketplace (if not already added)
+/plugin marketplace add The-Focus-AI/claude-marketplace
+
+# Install the plugin
+/plugin install focus-skills@focus-marketplace
+```
+
+Then restart Claude Code.
+
+### Manual Installation
+
+Install this plugin in Claude Code by adding it to your `.claude/plugins` directory.
 
 ## Available Skills
 
