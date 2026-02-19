@@ -1,9 +1,13 @@
 {
   "name": "focus-skills",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Collection of Focus.AI development skills",
   "author": {
     "name": "The Focus AI"
   },
-  "skills": "./skills"
+  "skills": [
+    "./skills/distill-backend-service",
+    "./skills/focus-account-integration",
+    "./skills/twitter-oauth-cli"
+  ]
 }

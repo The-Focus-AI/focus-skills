@@ -34,7 +34,8 @@ Build Distill microservices that collect, process, and summarize content from pl
 - Implementing JWT-based authentication with Clerk
 - Setting up sync scheduling and rate limiting
 
-**Reference:** [distill-backend-service.md](references/distill-backend-service.md)
+**Skill path:** `skills/distill-backend-service/SKILL.md`
+**Reference:** `skills/distill-backend-service/references/REFERENCE.md`
 
 ### 2. Focus Account Integration
 
@@ -47,7 +48,8 @@ Integrate applications with Focus API for authentication, wallet/credits, and jo
 - Creating, completing, or failing jobs with cost tracking
 - Setting up shared sign-in via account.thefocus.ai
 
-**Reference:** [focus-account-integration.md](references/focus-account-integration.md)
+**Skill path:** `skills/focus-account-integration/SKILL.md`
+**Reference:** `skills/focus-account-integration/references/REFERENCE.md`
 
 ### 3. Twitter OAuth CLI Tool
 
@@ -60,17 +62,26 @@ Build CLI tools that authenticate with Twitter/X OAuth 2.0 using PKCE flow.
 - Storing Twitter tokens for offline/automated use
 - Building tweet schedulers or social media tools
 
+**Skill path:** `skills/twitter-oauth-cli/SKILL.md`
+
 ## Usage
 
 In Claude Code, these skills will be automatically suggested based on your context and needs. You can also invoke them explicitly by asking Claude to use a specific skill.
 
-## Development
+## Skill Structure
 
-To modify or extend these skills, edit the markdown files in the `skills/` directory. Each skill is defined by:
+Each skill follows the universal [Agent Skills](https://agentskills.io) format:
 
-- **Frontmatter**: Name, description, and trigger conditions
-- **Content**: Step-by-step guidance, code examples, and best practices
-- **References**: Optional detailed reference documentation in `references/`
+```
+skills/
+  skill-name/
+    SKILL.md              # Core instructions with YAML frontmatter (required)
+    references/           # Detailed reference documentation (optional)
+    scripts/              # Executable automation scripts (optional)
+    assets/               # Templates and resources (optional)
+```
+
+This format is portable across Claude Code, OpenAI Codex, VS Code Copilot, Cursor, Gemini CLI, and other platforms that support the Agent Skills standard.
 
 ## License
 
